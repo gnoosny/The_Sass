@@ -1,0 +1,138 @@
+@import 'variables.scss';
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $main-font-family;
+}
+
+nav {
+    width: 100%;
+    background-color: $presentation-color;
+    .container {
+        padding: 20px 0 0 0;
+        margin: 0 auto;
+        display: flex;
+        max-width: $max-width;
+        .logo{
+            margin: auto 0;
+            img{
+                
+            }
+        }
+        ul {
+            list-style: none;
+            font-size: 14px;
+            font-weight: 700;
+            li {
+                display: inline;
+                text-transform: uppercase;
+                margin: 0 15px;
+                a {
+                    color: $nav-link-color;
+                    text-decoration: none;
+                    transition: .4s all;
+                    &:hover {
+                            color: $first-nav-link-color;
+                    }
+                }
+                &:first-child {
+                    a {
+                        color: $first-nav-link-color;
+                    }
+               
+                }
+            }
+        }
+    }
+}
+
+#presentation {
+    .container {
+        width: 100%;
+        background-color: $presentation-color;
+        .presentation {
+            max-width: $max-width;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0;
+            .how-column {
+                color: $presentation-font-color;
+                width: 50%;
+                .how {
+                    h1 {
+                        font-size: 42px;
+                        color: $presentation-h1-font-color;
+                        margin: 0 0 8px 0;
+                        font-family: 'Varela Round';
+                        font-weight: 100;
+                        letter-spacing: -3px;
+                    }
+                }
+                .how-text {
+                    p {
+                        font-size: 1.125rem;
+                        line-height: 1.9;
+                        margin: 24px 0 80px 0;
+                        font-weight: 300;
+                    }
+                }
+                .presentation-buttons {
+                    display: flex;
+                    justify-content: flex-start;
+                    .learn-more {
+                        border: 1px $learn-more-border-color solid;
+                        border-radius: 20px;
+                        padding: 12px 0;
+                        margin: 0 20px 0 0;
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        width: $presentation-buttons-width;
+                        text-align: center;
+                        transition: .3s all;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: $sign-up-bg-color;
+                            color: $sign-up-font-color;
+                            -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                            -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                            box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                        }
+                    }
+                    .sign-up {
+                        background-color: $sign-up-bg-color;
+                        border-radius: 20px;
+                        padding: 12px 0;
+                        color: $sign-up-font-color;
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        width: $presentation-buttons-width;
+                        text-align: center;
+                        transition: .3s all;
+                        &:hover{
+                            cursor: pointer
+                        }
+                    }
+                }
+            }
+            .laptop-column {
+                object-fit: fill;
+                width: 50%;
+                img {
+                    max-width: 90%;
+                    max-height: 90%;
+                    float: right;
+                }
+            }
+        }
+    }
+}
