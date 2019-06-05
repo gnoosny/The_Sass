@@ -19,8 +19,10 @@ nav {
       margin: auto 0; }
     nav .container ul {
       list-style: none;
-      font-size: 14px;
-      font-weight: 700; }
+      font-size: 0.87em;
+      word-spacing: 2px;
+      font-weight: 600;
+      letter-spacing: 1px; }
       nav .container ul li {
         display: inline;
         text-transform: uppercase;
@@ -50,7 +52,7 @@ nav {
         font-size: 42px;
         color: #fff;
         margin: 0 0 8px 0;
-        font-family: 'Varela Round';
+        font-family: "Varela Round";
         font-weight: 100;
         letter-spacing: -3px; }
       #presentation .container .presentation .how-column .how-text p {
@@ -93,7 +95,10 @@ nav {
           text-align: center;
           transition: .3s all; }
           #presentation .container .presentation .how-column .presentation-buttons .sign-up:hover {
-            cursor: pointer; }
+            cursor: pointer;
+            -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+            box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75); }
     #presentation .container .presentation .laptop-column {
       object-fit: fill;
       width: 50%; }
@@ -101,3 +106,179 @@ nav {
         max-width: 90%;
         max-height: 90%;
         float: right; }
+
+#understand .container {
+  width: 100%;
+  padding: 112px 0; }
+  #understand .container .understand {
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto; }
+    #understand .container .understand .small-title {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      margin-bottom: 1.5rem;
+      word-spacing: 2px;
+      color: rgba(153, 153, 153, 0.6); }
+    #understand .container .understand .title h2 {
+      font-size: 32px;
+      color: #323d47;
+      margin: 0 0 8px 0;
+      font-family: "Varela Round";
+      font-weight: 100;
+      letter-spacing: -2px; }
+    #understand .container .understand .hr {
+      width: 50px;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      margin-left: auto;
+      margin-right: auto; }
+      #understand .container .understand .hr hr {
+        border-top-color: rgba(117, 117, 117, 0.09);
+        margin: 2rem auto;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    #understand .container .understand .desc {
+      font-size: 1.125rem;
+      color: #757575; }
+
+#icons .container {
+  width: 100%;
+  padding-bottom: 112px; }
+  #icons .container .icon-columns {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex; }
+    #icons .container .icon-columns .icon-column {
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 0;
+      justify-content: space-evenly;
+      padding: 15px; }
+      #icons .container .icon-columns .icon-column .icon {
+        margin-right: 1.5rem;
+        font-size: 44px; }
+        #icons .container .icon-columns .icon-column .icon i.black {
+          color: #000; }
+        #icons .container .icon-columns .icon-column .icon i.blue {
+          color: #5ea9ff; }
+        #icons .container .icon-columns .icon-column .icon i.purple {
+          color: #af93e7; }
+        #icons .container .icon-columns .icon-column .icon i.yellow {
+          color: #ffbc06; }
+        #icons .container .icon-columns .icon-column .icon i.red {
+          color: #ff4954; }
+        #icons .container .icon-columns .icon-column .icon i.green {
+          color: #4fd868; }
+      #icons .container .icon-columns .icon-column .icon-text h5 {
+        font-family: "Varela Round";
+        font-size: 1.23047rem;
+        color: #323d47;
+        font-weight: 100;
+        margin: 0 0 8px 0; }
+      #icons .container .icon-columns .icon-column .icon-text p {
+        font-size: 15px;
+        color: #757575;
+        margin: 0 0 1rem 0;
+        line-height: 1.9; }
+
+#test-drive .container {
+  width: 100%;
+  background-color: #8ea6e6; }
+  #test-drive .container .test-drive {
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto 112px auto;
+    height: 137px; }
+    #test-drive .container .test-drive .header {
+      margin: auto 0; }
+      #test-drive .container .test-drive .header h4 {
+        font-family: "Varela Round";
+        font-size: 1.52344rem;
+        color: #fff;
+        font-weight: 100;
+        letter-spacing: -1px; }
+    #test-drive .container .test-drive .button {
+      margin: auto; }
+      #test-drive .container .test-drive .button .btn {
+        position: relative;
+        left: 100%;
+        margin: auto 0;
+        width: 200px !important;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 12px 0;
+        color: #757575;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        width: 150px;
+        text-align: center;
+        transition: .3s all; }
+        #test-drive .container .test-drive .button .btn:hover {
+          cursor: pointer;
+          -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+          -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+          box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75); }
+
+#discover .container .discover {
+  max-width: 1100px;
+  text-align: center;
+  margin: 0 auto 105px auto; }
+  #discover .container .discover .small-title {
+    display: inline-block;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    margin-bottom: 1.5rem;
+    word-spacing: 2px;
+    color: rgba(153, 153, 153, 0.6); }
+  #discover .container .discover .title h2 {
+    font-size: 32px;
+    color: #323d47;
+    margin: 0 0 8px 0;
+    font-family: "Varela Round";
+    font-weight: 100;
+    letter-spacing: -2px; }
+  #discover .container .discover .hr {
+    width: 50px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto; }
+    #discover .container .discover .hr hr {
+      border-top-color: rgba(117, 117, 117, 0.09);
+      margin: 2rem auto;
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  #discover .container .discover .desc {
+    font-size: 1.125rem;
+    color: #757575; }
+
+#discover .container .getting-started {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex; }
+  #discover .container .getting-started .start-img {
+    width: 40%;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 7px 0px rgba(201, 201, 201, 0.75); }
+    #discover .container .getting-started .start-img img {
+      max-height: 100%;
+      max-width: 100%; }
+  #discover .container .getting-started .start-text {
+    width: 45%;
+    margin: auto 0 auto 95px; }
+    #discover .container .getting-started .start-text h4 {
+      font-size: 1.52344rem;
+      color: #323d47; }
+    #discover .container .getting-started .start-text p {
+      font-size: .9375rem;
+      line-height: 1.9;
+      color: #757575; }

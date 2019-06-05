@@ -26,8 +26,10 @@ nav {
         }
         ul {
             list-style: none;
-            font-size: 14px;
-            font-weight: 700;
+            font-size: 0.87em;
+            word-spacing: 2px;
+            font-weight: 600;
+            letter-spacing: 1px;
             li {
                 display: inline;
                 text-transform: uppercase;
@@ -69,7 +71,7 @@ nav {
                         font-size: 42px;
                         color: $presentation-h1-font-color;
                         margin: 0 0 8px 0;
-                        font-family: 'Varela Round';
+                        font-family: $headers-font;
                         font-weight: 100;
                         letter-spacing: -3px;
                     }
@@ -119,7 +121,10 @@ nav {
                         text-align: center;
                         transition: .3s all;
                         &:hover{
-                            cursor: pointer
+                            cursor: pointer;
+                            -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                            -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                            box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
                         }
                     }
                 }
@@ -131,6 +136,244 @@ nav {
                     max-width: 90%;
                     max-height: 90%;
                     float: right;
+                }
+            }
+        }
+    }
+}
+
+#understand {
+    .container {
+        width: 100%;
+        padding: 112px 0;
+        .understand {
+            max-width: $max-width;
+            text-align: center;
+            margin: 0 auto;
+            .small-title{
+                display: inline-block;
+                font-size: 0.6875rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.75px;
+                margin-bottom: 1.5rem;
+                word-spacing: 2px;
+                color: $alternate-font-color;
+            }
+            .title {
+                h2 {
+                    font-size: 32px;
+                    color: $titles-font-color;
+                    margin: 0 0 8px 0;
+                    font-family: $headers-font;
+                    font-weight: 100;
+                    letter-spacing: -2px;
+                }
+            }
+            .hr {
+                width: 50px;
+                margin-top: 2.5rem;
+                margin-bottom: 1.5rem;
+                margin-left: auto;
+                margin-right: auto;
+                hr {
+                    border-top-color: rgba(117,117,117,0.09);
+                    margin: 2rem auto;
+                    border: 0;
+                    border-top: 1px solid rgba(0,0,0,0.1);
+                }
+            }
+            .desc {
+                font-size: 1.125rem;
+                color: $desc-font-color;
+            }
+        }
+    }
+}
+
+#icons {
+    .container {
+        width:100%;
+        padding-bottom: 112px;
+        .icon-columns {
+            max-width: $max-width;
+            margin: 0 auto;
+            display: flex;
+            .icon-column {
+                display: flex;
+                flex-grow: 1;
+                flex-basis: 0;
+                justify-content: space-evenly;
+                padding: 15px;
+                .icon{
+                    margin-right: 1.5rem;
+                    font-size: 44px;
+                    i {
+                        &.black {
+                            color: $icon-color-1;
+                        }
+                        &.blue {
+                            color: $icon-color-2;
+                        }
+                        &.purple{
+                            color: $icon-color-3;
+                        }
+                        &.yellow {
+                            color: $icon-color-4;
+                        }
+                        &.red {
+                            color: $icon-color-5;
+                        }
+                        &.green {
+                            color: $icon-color-6
+                        }
+                    }
+                }
+                .icon-text {
+                    h5 {
+                        font-family: $headers-font;
+                        font-size: 1.23047rem;
+                        color: $titles-font-color;
+                        font-weight: 100;
+                        margin: 0 0 8px 0;
+                    }
+                    p{
+                        font-size: 15px;
+                        color: $desc-font-color;
+                        margin: 0 0 1rem 0;
+                        line-height: 1.9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#test-drive {
+    .container {
+        width: 100%;
+        background-color: $test-drive-bg-color;
+            .test-drive{
+                max-width: $max-width;
+                display:flex;
+                margin: 0 auto 112px auto;
+                height: 137px;
+                
+                // display: flex;
+                .header {
+                    margin: auto 0;
+                    h4 {
+                        font-family: $headers-font;
+                        font-size: 1.52344rem;
+                        color: $header-h4-color;
+                        font-weight:100;
+                        letter-spacing: -1px;
+                    }
+                }
+              
+                .button {
+                    // margin: auto;
+                    margin: auto;
+                    // display:flex; 
+                    // align-items: flex-end;
+                    .btn{
+                        position: relative;
+                        left:100%;
+                        margin: auto 0;
+                        width: 200px !important;
+                        background-color: $sign-up-bg-color;
+                        border-radius: 20px;
+                        padding: 12px 0;
+                        color: $test-drive-btn-font-color;
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        width: $presentation-buttons-width;
+                        text-align: center;
+                        transition: .3s all;
+                        &:hover{
+                            cursor: pointer;
+                            -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                            -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                            box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                        }
+                    }
+                }
+            }
+    }
+}
+
+#discover {
+    .container {
+        .discover {
+            max-width: $max-width;
+            text-align: center;
+            margin: 0 auto 105px auto;
+            .small-title{
+                display: inline-block;
+                font-size: 0.6875rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.75px;
+                margin-bottom: 1.5rem;
+                word-spacing: 2px;
+                color: $alternate-font-color;
+            }
+            .title {
+                h2 {
+                    font-size: 32px;
+                    color: $titles-font-color;
+                    margin: 0 0 8px 0;
+                    font-family: $headers-font;
+                    font-weight: 100;
+                    letter-spacing: -2px;
+                }
+            }
+            .hr {
+                width: 50px;
+                margin-top: 2.5rem;
+                margin-bottom: 1.5rem;
+                margin-left: auto;
+                margin-right: auto;
+                hr {
+                    border-top-color: rgba(117,117,117,0.09);
+                    margin: 2rem auto;
+                    border: 0;
+                    border-top: 1px solid rgba(0,0,0,0.1);
+                }
+            }
+            .desc {
+                font-size: 1.125rem;
+                color: $desc-font-color;
+            }
+        }
+        .getting-started {
+            max-width: $max-width;
+            margin: 0 auto;
+            display: flex;
+            
+            .start-img {
+                width:40%;
+                -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                box-shadow: 0px 0px 7px 0px rgba(201, 201, 201, 0.75);
+                img {
+                    max-height: 100%;
+                    max-width: 100%;
+                }
+            }
+            .start-text {
+                width:45%;
+                margin: auto 0 auto 95px;
+                h4 {
+                    font-size: 1.52344rem;
+                    color: $titles-font-color;
+                }
+                p {
+                    font-size: .9375rem;
+                    line-height: 1.9;
+                    color: $desc-font-color;
                 }
             }
         }
