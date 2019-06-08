@@ -225,60 +225,296 @@ nav {
           -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
           box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75); }
 
-#discover .container .discover {
-  max-width: 1100px;
-  text-align: center;
-  margin: 0 auto 105px auto; }
-  #discover .container .discover .small-title {
-    display: inline-block;
-    font-size: 0.6875rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
-    margin-bottom: 1.5rem;
-    word-spacing: 2px;
-    color: rgba(153, 153, 153, 0.6); }
-  #discover .container .discover .title h2 {
-    font-size: 32px;
-    color: #323d47;
-    margin: 0 0 8px 0;
-    font-family: "Varela Round";
-    font-weight: 100;
-    letter-spacing: -2px; }
-  #discover .container .discover .hr {
+#discover {
+  background-color: #fafbfb; }
+  #discover .container {
+    width: 100%;
+    padding: 0 0 112px 0;
+    margin: 0 0 112px 0; }
+    #discover .container .discover {
+      max-width: 1100px;
+      text-align: center;
+      margin: 0 auto 105px auto; }
+      #discover .container .discover .small-title {
+        display: inline-block;
+        font-size: 0.6875rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+        margin-bottom: 1.5rem;
+        word-spacing: 2px;
+        color: rgba(153, 153, 153, 0.6); }
+      #discover .container .discover .title h2 {
+        font-size: 32px;
+        color: #323d47;
+        margin: 0 0 8px 0;
+        font-family: "Varela Round";
+        font-weight: 100;
+        letter-spacing: -2px; }
+      #discover .container .discover .hr {
+        width: 50px;
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto; }
+        #discover .container .discover .hr hr {
+          border-top-color: rgba(117, 117, 117, 0.09);
+          margin: 2rem auto;
+          border: 0;
+          border-top: 1px solid rgba(0, 0, 0, 0.1); }
+      #discover .container .discover .desc {
+        font-size: 1.125rem;
+        color: #757575; }
+    #discover .container .start-and-review {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex; }
+      #discover .container .start-and-review .start-and-review-img {
+        width: 40%;
+        -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+        box-shadow: 0px 0px 7px 0px rgba(201, 201, 201, 0.75); }
+        #discover .container .start-and-review .start-and-review-img img {
+          max-height: 100%;
+          max-width: 100%; }
+      #discover .container .start-and-review .start-and-review-text {
+        width: 45%;
+        margin: auto 0 auto 95px; }
+        #discover .container .start-and-review .start-and-review-text h4 {
+          font-size: 1.52344rem;
+          color: #323d47; }
+        #discover .container .start-and-review .start-and-review-text p {
+          font-size: .9375rem;
+          line-height: 1.9;
+          color: #757575; }
+    #discover .container .hr {
+      max-width: 1100px;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      margin-left: auto;
+      margin-right: auto; }
+      #discover .container .hr hr {
+        border-top-color: rgba(117, 117, 117, 0.09);
+        margin: 5rem auto;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    #discover .container .outdated {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex; }
+      #discover .container .outdated .outdated-img {
+        width: 40%;
+        margin: auto 0 auto 95px;
+        -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+        box-shadow: 0px 0px 7px 0px rgba(201, 201, 201, 0.75); }
+        #discover .container .outdated .outdated-img img {
+          max-height: 100%;
+          max-width: 100%; }
+      #discover .container .outdated .outdated-text {
+        width: 45%; }
+        #discover .container .outdated .outdated-text h4 {
+          font-size: 1.52344rem;
+          color: #323d47; }
+        #discover .container .outdated .outdated-text p {
+          font-size: .9375rem;
+          line-height: 1.9;
+          color: #757575; }
+
+#pricing .container {
+  width: 100%;
+  padding: 0 0 112px 0; }
+  #pricing .container .pricing {
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto 105px auto; }
+    #pricing .container .pricing .small-title {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      margin-bottom: 1.5rem;
+      word-spacing: 2px;
+      color: rgba(153, 153, 153, 0.6); }
+    #pricing .container .pricing .title h2 {
+      font-size: 32px;
+      color: #323d47;
+      margin: 0 0 8px 0;
+      font-family: "Varela Round";
+      font-weight: 100;
+      letter-spacing: -2px; }
+  #pricing .container .hr {
     width: 50px;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
     margin-left: auto;
     margin-right: auto; }
-    #discover .container .discover .hr hr {
+    #pricing .container .hr hr {
       border-top-color: rgba(117, 117, 117, 0.09);
       margin: 2rem auto;
       border: 0;
       border-top: 1px solid rgba(0, 0, 0, 0.1); }
-  #discover .container .discover .desc {
+  #pricing .container .desc {
     font-size: 1.125rem;
     color: #757575; }
+  #pricing .container .choose-btn {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    color: #757575;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0 0 48px 0; }
+    #pricing .container .choose-btn .monthly {
+      background-color: #e9ecf0;
+      padding: 12px 26px;
+      border-radius: 15px 0 0 15px;
+      width: 150px; }
+    #pricing .container .choose-btn .yearly {
+      padding: 12px 26px;
+      border: 1px solid #e9ecf0;
+      border-radius: 0 15px 15px 0;
+      width: 150px; }
+      #pricing .container .choose-btn .yearly:hover {
+        background-color: #e9ecf0; }
+  #pricing .container .plans {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 112px 0; }
+    #pricing .container .plans .plan-column {
+      border: 1px solid #ebebeb;
+      width: 31%; }
+      #pricing .container .plans .plan-column .name {
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #fcfdfe;
+        border-bottom: 1px solid #ebebeb;
+        color: #757575;
+        font-size: 13px;
+        padding: 20px 0;
+        margin-bottom: 16px;
+        font-weight: 700; }
+      #pricing .container .plans .plan-column .price {
+        font-size: 60px;
+        font-family: "Varela Round";
+        text-align: center;
+        line-height: 1.5; }
+        #pricing .container .plans .plan-column .price .up {
+          display: inline-block;
+          font-size: 16px;
+          vertical-align: text-top;
+          margin-right: -10px;
+          margin-top: 10px; }
+        #pricing .container .plans .plan-column .price .down {
+          display: inline-block;
+          font-size: 12px;
+          vertical-align: text-bottom;
+          margin-left: -10px;
+          margin-bottom: 14px;
+          color: #929daf; }
+      #pricing .container .plans .plan-column .details {
+        text-align: center;
+        line-height: 1.9; }
+        #pricing .container .plans .plan-column .details p {
+          color: #868e96;
+          font-size: 13px;
+          padding: 0 0 32px 0; }
+      #pricing .container .plans .plan-column .btn {
+        margin: 0 auto 30px auto; }
+        #pricing .container .plans .plan-column .btn .button {
+          width: 50%;
+          margin: 0 auto;
+          text-align: center;
+          background-color: #50a1ff;
+          color: #fff;
+          text-transform: uppercase;
+          padding: 12px 26px;
+          font-size: 11px;
+          letter-spacing: 2px; }
+    #pricing .container .plans .middle-column {
+      -webkit-box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.24);
+      -moz-box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.24);
+      box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.24); }
+      #pricing .container .plans .middle-column .price {
+        color: #3cd458da; }
+      #pricing .container .plans .middle-column .btn .button {
+        background-color: #3cd458da; }
+        #pricing .container .plans .middle-column .btn .button:hover {
+          background-color: #3cd458; }
 
-#discover .container .getting-started {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex; }
-  #discover .container .getting-started .start-img {
-    width: 40%;
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
-    box-shadow: 0px 0px 7px 0px rgba(201, 201, 201, 0.75); }
-    #discover .container .getting-started .start-img img {
-      max-height: 100%;
-      max-width: 100%; }
-  #discover .container .getting-started .start-text {
-    width: 45%;
-    margin: auto 0 auto 95px; }
-    #discover .container .getting-started .start-text h4 {
-      font-size: 1.52344rem;
-      color: #323d47; }
-    #discover .container .getting-started .start-text p {
-      font-size: .9375rem;
-      line-height: 1.9;
-      color: #757575; }
+#get-started-form .container {
+  width: 100%;
+  background-color: #fafbfb;
+  padding: 112px 0; }
+  #get-started-form .container .get-started-form {
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto 105px auto; }
+    #get-started-form .container .get-started-form .small-title {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      margin-bottom: 1.5rem;
+      word-spacing: 2px;
+      color: rgba(153, 153, 153, 0.6); }
+    #get-started-form .container .get-started-form .title h2 {
+      font-size: 60px;
+      color: #323d47;
+      margin: 0 0 8px 0;
+      font-family: "Varela Round";
+      font-weight: 100;
+      letter-spacing: -2px; }
+  #get-started-form .container .hr {
+    width: 50px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto; }
+    #get-started-form .container .hr hr {
+      border-top-color: rgba(117, 117, 117, 0.09);
+      margin: 2rem auto;
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  #get-started-form .container .desc {
+    font-size: 1.125rem;
+    color: #757575; }
+  #get-started-form .container .form {
+    max-width: 1100px;
+    margin: 0 auto; }
+    #get-started-form .container .form form {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      width: 350px; }
+      #get-started-form .container .form form input {
+        padding: 15px;
+        margin: 10px 0;
+        font-size: 18px; }
+        #get-started-form .container .form form input:last-child {
+          background-color: #3cd458da;
+          border: 0px;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-size: 13px;
+          font-weight: 900;
+          letter-spacing: 2px; }
+          #get-started-form .container .form form input:last-child:hover {
+            background-color: #3cd458; }
+    #get-started-form .container .form .or-fb {
+      max-width: 1100px;
+      margin: 0 auto; }
+      #get-started-form .container .form .or-fb p {
+        text-align: center;
+        font-size: 13px; }
+        #get-started-form .container .form .or-fb p a {
+          color: #50a1ff;
+          text-decoration: none; }

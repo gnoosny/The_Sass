@@ -305,7 +305,11 @@ nav {
 }
 
 #discover {
+    background-color: $discover-bg;
     .container {
+        width: 100%;
+        padding: 0 0 112px 0;
+        margin: 0 0 112px 0;
         .discover {
             max-width: $max-width;
             text-align: center;
@@ -348,12 +352,12 @@ nav {
                 color: $desc-font-color;
             }
         }
-        .getting-started {
+        .start-and-review {
             max-width: $max-width;
             margin: 0 auto;
             display: flex;
             
-            .start-img {
+            .start-and-review-img {
                 width:40%;
                 -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
                 -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
@@ -363,7 +367,7 @@ nav {
                     max-width: 100%;
                 }
             }
-            .start-text {
+            .start-and-review-text {
                 width:45%;
                 margin: auto 0 auto 95px;
                 h4 {
@@ -374,6 +378,300 @@ nav {
                     font-size: .9375rem;
                     line-height: 1.9;
                     color: $desc-font-color;
+                }
+            }
+        }
+        .hr {
+            max-width: $max-width;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            hr {
+                border-top-color: rgba(117,117,117,0.09);
+                margin: 5rem auto;
+                border: 0;
+                border-top: 1px solid rgba(0,0,0,0.1);
+            }
+        }
+        .outdated {
+            max-width: $max-width;
+            margin: 0 auto;
+            display: flex;
+            
+            .outdated-img {
+                width:40%;
+                margin: auto 0 auto 95px;
+                -webkit-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                -moz-box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+                box-shadow: 0px 0px 7px 0px rgba(201, 201, 201, 0.75);
+                img {
+                    max-height: 100%;
+                    max-width: 100%;
+                }
+            }
+            .outdated-text {
+                width:45%;
+                
+                h4 {
+                    font-size: 1.52344rem;
+                    color: $titles-font-color;
+                }
+                p {
+                    font-size: .9375rem;
+                    line-height: 1.9;
+                    color: $desc-font-color;
+                }
+            }
+        }
+    }
+}
+
+#pricing {
+    .container {
+        width: 100%;
+        padding: 0 0 112px 0;
+        // margin: 0 0 112px 0;
+        .pricing {
+            max-width: $max-width;
+            text-align: center;
+            margin: 0 auto 105px auto;
+            .small-title{
+                display: inline-block;
+                font-size: 0.6875rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.75px;
+                margin-bottom: 1.5rem;
+                word-spacing: 2px;
+                color: $alternate-font-color;
+            }
+            .title {
+                h2 {
+                    font-size: 32px;
+                    color: $titles-font-color;
+                    margin: 0 0 8px 0;
+                    font-family: $headers-font;
+                    font-weight: 100;
+                    letter-spacing: -2px;
+                }
+            }
+        }
+        .hr {
+            width: 50px;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            hr {
+                border-top-color: rgba(117,117,117,0.09);
+                margin: 2rem auto;
+                border: 0;
+                border-top: 1px solid rgba(0,0,0,0.1);
+            }
+        }
+        .desc {
+            font-size: 1.125rem;
+            color: $desc-font-color;
+        }
+        .choose-btn {
+            max-width: $max-width;
+            margin: 0 auto;
+            display: flex;
+            text-transform: uppercase;
+            justify-content: center;
+            text-align:center;
+            color: $choose-btn-font-color;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 0 0 48px 0;
+            .monthly {
+                background-color: $choose-btn-monthly-color;
+                padding: $choose-btn-my-padding;
+                border-radius: 15px 0 0 15px;
+                width: $choose-btn-my-width;
+            }
+            .yearly {
+                padding: $choose-btn-my-padding;
+                border: $choose-btn-yearly-border;
+                border-radius: 0 15px 15px 0;
+                width: $choose-btn-my-width;
+                &:hover {
+                    background-color: $choose-btn-monthly-color;
+                }
+            }
+        }
+        .plans {
+            max-width: $max-width;
+            margin: 0 auto;
+            display: flex;
+            justify-content:space-between;
+            padding: 0 0 112px 0;
+            .plan-column {
+                border: $plan-border;
+                width: 31%;
+                .name {
+                    text-transform: uppercase;
+                    text-align: center;
+                    background-color: $plan-name-bg;
+                    border-bottom: $plan-border;
+                    color: $plan-name-font-color;
+                    font-size: 13px;
+                    padding: 20px 0;
+                    margin-bottom:16px;
+                    font-weight: 700;
+                }
+                .price {
+                    font-size: 60px;
+                    font-family: $headers-font;
+                    text-align: center;
+                    line-height: 1.5;
+                    .up {
+                        display: inline-block;
+                        font-size: 16px;
+                        vertical-align: text-top;
+                        margin-right: -10px;
+                        margin-top: 10px;
+                    }
+                    .down {
+                        display: inline-block;
+                        font-size: 12px;
+                        vertical-align: text-bottom;
+                        margin-left: -10px;
+                        margin-bottom: 14px;
+                        color: #929daf;
+                    }
+                }
+                .details {
+                    text-align: center;
+                    line-height: 1.9;
+                    p {
+                        color: $plan-p-font-color;
+                        font-size: 13px;
+                        padding: 0 0 32px 0;
+                    }
+                }
+                .btn {
+                    margin: 0 auto 30px auto;
+                    .button {
+                        width:50%;
+                        margin: 0 auto;
+                        text-align: center;
+                        background-color: $plan-btn-bg;
+                        color: $plan-btn-color;
+                        text-transform: uppercase;
+                        padding: 12px 26px;
+                        font-size: 11px;
+                        letter-spacing: 2px;
+                    }
+                }
+                
+            }
+            .middle-column {
+                -webkit-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.24);
+                -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.24);
+                box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.24);
+                .price {
+                    color: $plan-middle-color;
+                }
+                .btn {
+                    .button{
+                        background-color: $plan-middle-color;
+                        &:hover{
+                            background-color: $plan-middle-color-hover;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
+
+#get-started-form {
+    .container {
+        width: 100%;
+        background-color: $discover-bg;
+        padding: 112px 0;
+        .get-started-form {
+            max-width: $max-width;
+            text-align: center;
+            margin: 0 auto 105px auto;
+            
+            .small-title{
+                display: inline-block;
+                font-size: 0.6875rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.75px;
+                margin-bottom: 1.5rem;
+                word-spacing: 2px;
+                color: $alternate-font-color;
+            }
+            .title {
+                h2 {
+                    font-size: 60px;
+                    color: $titles-font-color;
+                    margin: 0 0 8px 0;
+                    font-family: $headers-font;
+                    font-weight: 100;
+                    letter-spacing: -2px;
+                }
+            }
+        }
+        .hr {
+            width: 50px;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            hr {
+                border-top-color: rgba(117,117,117,0.09);
+                margin: 2rem auto;
+                border: 0;
+                border-top: 1px solid rgba(0,0,0,0.1);
+            }
+        }
+        .desc {
+            font-size: 1.125rem;
+            color: $desc-font-color;
+        }
+        .form {
+            max-width: $max-width;
+            margin: 0 auto;
+            form {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                width: 350px;
+                input {
+                    padding: 15px;
+                    margin: 10px 0;
+                    font-size: 18px;
+                    &:last-child {
+                        background-color: $sign-up-btn-bg;
+                        border: 0px;
+                        text-transform: uppercase;
+                        color: $sign-up-btn-color;
+                        font-size: 13px;
+                        font-weight: 900;
+                        letter-spacing: 2px;
+                        &:hover {
+                            background-color: $sign-up-btn-bg-hover;
+                        }
+                    }
+                }
+            }
+            .or-fb {
+                max-width: $max-width;
+                margin: 0 auto;
+                p {
+                    text-align: center;
+                    font-size: 13px;
+                    a {
+                        color: $fb-account-color;
+                        text-decoration: none;
+                    }
                 }
             }
         }
