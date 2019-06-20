@@ -1,4 +1,5 @@
 @import 'variables.scss';
+// @import 'mixin.scss'
 
 *, *:before, *:after{
     box-sizing: border-box;
@@ -432,6 +433,7 @@ nav {
         width: 100%;
         padding: 0 0 112px 0;
         // margin: 0 0 112px 0;
+        // @include nazwafunkcji
         .pricing {
             max-width: $max-width;
             text-align: center;
