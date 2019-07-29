@@ -521,10 +521,19 @@ nav {
             margin: 0 auto;
             display: flex;
             justify-content:space-between;
-            padding: 0 0 112px 0;
+            // padding: 0 0 112px 0;
             .plan-column {
                 border: $plan-border;
                 width: 31%;
+                transition: .5s all;
+                &:nth-child(odd) {
+                    &:hover {
+                        -webkit-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.24);
+                        -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.24);
+                        box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.24);
+              
+                    }
+                }
                 .name {
                     text-transform: uppercase;
                     text-align: center;
@@ -541,6 +550,7 @@ nav {
                     font-family: $headers-font;
                     text-align: center;
                     line-height: 1.5;
+                    padding: 30px 0;
                     .up {
                         display: inline-block;
                         font-size: 16px;
@@ -568,8 +578,10 @@ nav {
                 }
                 .btn {
                     margin: 0 auto 30px auto;
+                    
                     .button {
                         width:50%;
+                        cursor: pointer;
                         margin: 0 auto;
                         text-align: center;
                         background-color: $plan-btn-bg;
