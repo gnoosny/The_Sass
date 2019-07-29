@@ -14,8 +14,9 @@ body {
 nav {
     width: 100%;
     background-color: $presentation-color;
+    position: fixed;
     .container {
-        padding: 20px 0 0 0;
+        padding: 10px 0 ;
         margin: 0 auto;
         display: flex;
         max-width: $max-width;
@@ -55,15 +56,25 @@ nav {
 }
 
 #presentation {
+    width: 100%;
     .container {
         width: 100%;
+        height: 100vh;
         background-color: $presentation-color;
+        // position: relative;
         .presentation {
             max-width: $max-width;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             padding: 50px 0;
+            height: 90vh;
+            align-items: center;
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            
             .how-column {
                 color: $presentation-font-color;
                 width: 50%;
@@ -257,7 +268,7 @@ nav {
             .test-drive{
                 max-width: $max-width;
                 display:flex;
-                margin: 0 auto 112px auto;
+                margin: 0 auto 0 auto;
                 height: 137px;
                 
                 // display: flex;
@@ -309,8 +320,9 @@ nav {
     background-color: $discover-bg;
     .container {
         width: 100%;
-        padding: 0 0 112px 0;
-        margin: 0 0 112px 0;
+        padding: 112px 0;
+        // padding: 0 0 112px 0;
+        // margin: 0 0 112px 0;
         .discover {
             max-width: $max-width;
             text-align: center;
@@ -431,7 +443,7 @@ nav {
 #pricing {
     .container {
         width: 100%;
-        padding: 0 0 112px 0;
+        padding: 112px 0 112px 0;
         // margin: 0 0 112px 0;
         // @include nazwafunkcji
         .pricing {
@@ -678,4 +690,48 @@ nav {
             }
         }
     }
+}
+
+footer {
+    .container {
+        width: 100%;
+        // background-color: $discover-bg;
+        // display: flex;
+        // justify-content: space-between;
+        .footer {
+            max-width: $max-width;
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            .logo {
+                // width: 20%;
+            }
+            ul {
+                display: flex;
+                list-style-type: none;
+                margin-left: 80px;
+                padding: 0;
+                li {
+                    padding: 8px 16px;
+                    a {
+                        text-decoration: none;
+                        color: $desc-font-color;
+                        &:hover {
+                           color: $fb-account-color; 
+                        }
+                        
+                    }
+                }
+            }
+            p {
+                font-size: 13px;
+                color: $desc-font-color;
+            }
+        }
+      
+    }
+
 }
